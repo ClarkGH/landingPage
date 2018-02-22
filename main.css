@@ -1,9 +1,9 @@
 :root {
   --container-bg-color: #333;
-  --left-bg-color: rgba(223, 39, 39, 0.7);
-  --left-button-hover-color: rgba(161, 11, 11, 0.3);
-  --right-bg-color: rgba(43, 43, 43, 0.8);
-  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --left-bg-color: rgba(0, 80, 255, 0.7);
+  --left-button-hover-color: rgba(00, 35, 100, 0.9);
+  --right-bg-color: rgba(60, 60, 60, 0.7);
+  --right-button-hover-color: rgba(20, 20, 20, .9);
   --hover-width: 75%;
   --other-width: 25%;
   --speed: 1000ms;
@@ -86,7 +86,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url('images/mushroom.jpg') center center no-repeat;
+  background: url('images/hacking.jpg') center center no-repeat;
   background-size: cover;
 }
 
