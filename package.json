@@ -1,0 +1,29 @@
+{
+  "name": "clark-site",
+  "version": "0.0.1",
+  "description": "My hand-made portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkGH/landingPage.git"
+  },
+  "author": "Clark Hinchcliff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClarkGH/landingPage/issues"
+  },
+  "homepage": "https://github.com/ClarkGH/landingPage#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.11.0"
+  }
+}
