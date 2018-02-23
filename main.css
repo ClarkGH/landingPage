@@ -1,7 +1,7 @@
 :root {
   --container-bg-color: #333;
   --left-bg-color: rgba(0, 80, 200, 0.7);
-  --left-button-hover-color: rgba(21, 45, 100, 0.9);
+  --left-button-hover-color: rgba(20, 60, 135, 0.9);
   --right-bg-color: rgba(60, 60, 60, 0.7);
   --right-button-hover-color: rgba(20, 20, 20, .9);
   --hover-width: 75%;
@@ -73,7 +73,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('images/boat.jpg') center center no-repeat;
+  background: url('images/lake.jpg') center center no-repeat;
   background-size: cover;
 }
 
