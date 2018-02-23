@@ -20,7 +20,7 @@ html, body {
 
 h1 {
   font-size: 4rem;
-  color: #FEFEFE;
+  color: #CCC;
   position: absolute;
   left: 50%;
   top: 20%;
@@ -37,8 +37,8 @@ h1 {
   padding-top: 1.3rem;
   width: 15rem;
   text-align: center;
-  color: #FEFEFE;
-  border: #FEFEFE solid 0.2rem;
+  color: #CCC;
+  border: #CCC solid 0.2rem;
   border-radius: 130px;
   font-size: 1rem;
   font-weight: bold;
