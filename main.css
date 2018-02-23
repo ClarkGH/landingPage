@@ -1,7 +1,7 @@
 :root {
   --container-bg-color: #333;
-  --left-bg-color: rgba(0, 80, 255, 0.7);
-  --left-button-hover-color: rgba(00, 35, 100, 0.9);
+  --left-bg-color: rgba(0, 80, 200, 0.7);
+  --left-button-hover-color: rgba(21, 45, 100, 0.9);
   --right-bg-color: rgba(60, 60, 60, 0.7);
   --right-button-hover-color: rgba(20, 20, 20, .9);
   --hover-width: 75%;
@@ -20,7 +20,7 @@ html, body {
 
 h1 {
   font-size: 4rem;
-  color: #fff;
+  color: #FEFEFE;
   position: absolute;
   left: 50%;
   top: 20%;
@@ -37,8 +37,9 @@ h1 {
   padding-top: 1.3rem;
   width: 15rem;
   text-align: center;
-  color: #fff;
-  border: #fff solid 0.2rem;
+  color: #FEFEFE;
+  border: #FEFEFE solid 0.2rem;
+  border-radius: 130px;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
