@@ -2,12 +2,14 @@ var express = require('express'),
   app = express(),
   path = require('path');
 
+app.set('port', (process.env.PORT || 5000));
+
 app.use(express.static('./dist/'))
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
-app.listen(8080, () => {
-  console.log('App is now listening on port 8080!');
+app.listen('port', () => {
+  console.log('Node app is now listening on port: ', app.get('port'));
 });
