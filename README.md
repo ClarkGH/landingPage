@@ -1,7 +1,23 @@
--A Basic Landing Page
+# My Website
 
-A very simple landing page made with pure html, css, and js
+As the title says, this is the code for my portfolio page.
 
-Done quickly following this tutorial: https://www.youtube.com/watch?v=oRmQN244Ir0
+## Languages used
 
-Making this my own next.
+1. Javascript
+2. Html
+3. CSS (in js soon)
+
+## Libraries/Frameworks
+
+1. Node.js/Express/yarn
+2. ReactJS
+3. Webpack/babel
+
+## To run
+
+...pending
+
+### Credit
+
+All images were taken from Pixabay
