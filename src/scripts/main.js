@@ -1,20 +1,10 @@
-const left = document.querySelector('.left');
-const right = document.querySelector('.right');
-const container = document.querySelector('.container');
+"use strict";
 
-left.addEventListener('mouseenter', () => {
-  container.classList.add('hover-left');
-});
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App/components/App';
 
-left.addEventListener('mouseleave', () => {
-  container.classList.remove('hover-left');
-});
-
-right.addEventListener('mouseenter', () => {
-  container.classList.add('hover-right');
-});
-
-right.addEventListener('mouseleave', () => {
-  container.classList.remove('hover-right');
-});
-
+const element = (
+  <App />
+);
+ReactDOM.render(element, document.getElementById('root'));
