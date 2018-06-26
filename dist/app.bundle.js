@@ -24579,37 +24579,6 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(
-          'ul',
-          null,
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/' },
-              'Home'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/airports' },
-              'Airports'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/cities' },
-              'Cities'
-            )
-          )
-        ),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Home2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/airports', component: Airport }),
         _react2.default.createElement(_reactRouterDom.Route, { path: '/cities', component: City })
@@ -24621,43 +24590,6 @@ var App = function (_Component) {
 }(_react.Component);
 
 exports.default = App;
-
-// export default class App extends React.Component {
-//   componentDidMount() {
-//     const left = document.querySelector('.left');
-//     const right = document.querySelector('.right');
-//     const container = document.querySelector('.container');
-
-//     left.addEventListener('mouseenter', () => {
-//       container.classList.add('hover-left');
-//     });
-
-//     left.addEventListener('mouseleave', () => {
-//       container.classList.remove('hover-left');
-//     });
-
-//     right.addEventListener('mouseenter', () => {
-//       container.classList.add('hover-right');
-//     });
-
-//     right.addEventListener('mouseleave', () => {
-//       container.classList.remove('hover-right');
-//     });
-//   }
-
-//   render() {
-//     return <div>
-//       <div className="split left">
-//         <h1>About Clark</h1>
-//         <a href="#" className="button">Read More</a>
-//       </div>
-//       <div className="split right">
-//         <h1>Projects</h1>
-//         <a href="#" className="button">Read More</a>
-//       </div>
-//     </div>
-//   }
-// }
 
 /***/ }),
 /* 70 */
