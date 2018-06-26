@@ -2,23 +2,13 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import Home from './Home';
 
-const Airport = () => (
+const Portfolio = () => (
   <div>
-    <ul>
-      <li>Jomo Kenyatta</li>
-      <li>Tambo</li>
-      <li>Murtala Mohammed</li>
-    </ul>
   </div>
 );
 
-const City = () => (
+const About = () => (
   <div>
-    <ul>
-      <li>San Francisco</li>
-      <li>Istanbul</li>
-      <li>Tokyo</li>
-    </ul>
   </div>
 );
 
@@ -27,8 +17,8 @@ class App extends Component {
     return (
       <div>
         <Route path="/" component={Home} />
-        <Route path="/airports" component={Airport} />
-        <Route path="/cities" component={City} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/about" component={About} />
       </div>
     );
   }
