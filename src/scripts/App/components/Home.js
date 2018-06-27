@@ -7,7 +7,6 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    //TODO: Move to react events
     const left = document.querySelector('.left');
     const right = document.querySelector('.right');
     const container = document.querySelector('.container');
