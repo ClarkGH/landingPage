@@ -1,4 +1,20 @@
 import React, {Component} from 'react';
+import {Route, Link} from "react-router-dom";
+import About from './About';
+import Portfolio from './Portfolio';
+
+const HomePage = () => {
+  return (<div>
+    <div className="split left">
+      <h1>About Clark</h1>
+      <Link to="/portfolio" className="button">Read More</Link>
+    </div>
+    <div className="split right">
+      <h1>Projects</h1>
+      <a href="#" className="button">Read More</a>
+    </div>
+  </div>);
+}
 
 export default class Home extends Component {
   constructor(props) {
@@ -29,14 +45,9 @@ export default class Home extends Component {
 
   render() {
     return <div>
-      <div className="split left">
-        <h1>About Clark</h1>
-        <a href="#" className="button">Read More</a>
-      </div>
-      <div className="split right">
-        <h1>Projects</h1>
-        <a href="#" className="button">Read More</a>
-      </div>
+      <Route path="/" exact component={HomePage}/>
+      <Route path="/about" component={About} />
+      <Route path="/portfolio" component={Portfolio} />
     </div>
   }
 }

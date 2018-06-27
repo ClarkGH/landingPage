@@ -24498,19 +24498,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(24);
-
 var _Home = __webpack_require__(70);
 
 var _Home2 = _interopRequireDefault(_Home);
-
-var _About = __webpack_require__(71);
-
-var _About2 = _interopRequireDefault(_About);
-
-var _Portfolio = __webpack_require__(72);
-
-var _Portfolio2 = _interopRequireDefault(_Portfolio);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24532,13 +24522,7 @@ var App = function (_Component) {
   _createClass(App, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Home2.default }),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/portfolio', component: _Portfolio2.default })
-      );
+      return _react2.default.createElement(_Home2.default, null);
     }
   }]);
 
@@ -24564,6 +24548,16 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(24);
+
+var _About = __webpack_require__(71);
+
+var _About2 = _interopRequireDefault(_About);
+
+var _Portfolio = __webpack_require__(72);
+
+var _Portfolio2 = _interopRequireDefault(_Portfolio);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24571,6 +24565,41 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HomePage = function HomePage() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'div',
+      { className: 'split left' },
+      _react2.default.createElement(
+        'h1',
+        null,
+        'About Clark'
+      ),
+      _react2.default.createElement(
+        _reactRouterDom.Link,
+        { to: '/portfolio', className: 'button' },
+        'Read More'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'split right' },
+      _react2.default.createElement(
+        'h1',
+        null,
+        'Projects'
+      ),
+      _react2.default.createElement(
+        'a',
+        { href: '#', className: 'button' },
+        'Read More'
+      )
+    )
+  );
+};
 
 var Home = function (_Component) {
   _inherits(Home, _Component);
@@ -24610,34 +24639,9 @@ var Home = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(
-          'div',
-          { className: 'split left' },
-          _react2.default.createElement(
-            'h1',
-            null,
-            'About Clark'
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: '#', className: 'button' },
-            'Read More'
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'split right' },
-          _react2.default.createElement(
-            'h1',
-            null,
-            'Projects'
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: '#', className: 'button' },
-            'Read More'
-          )
-        )
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/', exact: true, component: HomePage }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/portfolio', component: _Portfolio2.default })
       );
     }
   }]);
