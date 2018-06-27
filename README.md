@@ -20,7 +20,7 @@ As the title says, this is the code for my portfolio page.
 2. Run NPM start
 3. Go to http://localhost:8080
 
-##TODO
+## TODO
 
 1. Change events to react events
 2. Move CSS to in-js
