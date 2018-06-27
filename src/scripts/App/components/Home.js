@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
   constructor(props) {
@@ -7,6 +7,7 @@ class Home extends Component {
   }
 
   componentDidMount() {
+    //TODO: Move to react events
     const left = document.querySelector('.left');
     const right = document.querySelector('.right');
     const container = document.querySelector('.container');
