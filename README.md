@@ -16,7 +16,17 @@ As the title says, this is the code for my portfolio page.
 
 ## To run
 
-...pending
+1. Via the CLI, go to the directory and run: yarn install / npm install
+2. Run NPM start
+3. Go to http://localhost:8080
+
+##TODO
+
+1. Change events to react events
+2. Move CSS to in-js
+3. Create about page layout/styles
+4. Create portfolio page layout/styles
+5. Refactor
 
 ### Credit
 
