@@ -24504,6 +24504,14 @@ var _Home = __webpack_require__(70);
 
 var _Home2 = _interopRequireDefault(_Home);
 
+var _About = __webpack_require__(71);
+
+var _About2 = _interopRequireDefault(_About);
+
+var _Portfolio = __webpack_require__(72);
+
+var _Portfolio2 = _interopRequireDefault(_Portfolio);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24511,58 +24519,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Airport = function Airport() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(
-      'ul',
-      null,
-      _react2.default.createElement(
-        'li',
-        null,
-        'Jomo Kenyatta'
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        'Tambo'
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        'Murtala Mohammed'
-      )
-    )
-  );
-};
-
-var City = function City() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(
-      'ul',
-      null,
-      _react2.default.createElement(
-        'li',
-        null,
-        'San Francisco'
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        'Istanbul'
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        'Tokyo'
-      )
-    )
-  );
-};
 
 var App = function (_Component) {
   _inherits(App, _Component);
@@ -24580,8 +24536,8 @@ var App = function (_Component) {
         'div',
         null,
         _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Home2.default }),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/airports', component: Airport }),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/cities', component: City })
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/portfolio', component: _Portfolio2.default })
       );
     }
   }]);
@@ -24690,6 +24646,68 @@ var Home = function (_Component) {
 }(_react.Component);
 
 exports.default = Home;
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var About = function About() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'h1',
+      null,
+      'About'
+    )
+  );
+};
+
+exports.default = About;
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Portfolio = function Portfolio() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'h1',
+      null,
+      'Portfolio'
+    )
+  );
+};
+
+exports.default = Portfolio;
 
 /***/ })
 /******/ ]);
