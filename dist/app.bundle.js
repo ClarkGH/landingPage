@@ -24498,63 +24498,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Home = __webpack_require__(70);
-
-var _Home2 = _interopRequireDefault(_Home);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var App = function (_Component) {
-  _inherits(App, _Component);
-
-  function App() {
-    _classCallCheck(this, App);
-
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-  }
-
-  _createClass(App, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(_Home2.default, null);
-    }
-  }]);
-
-  return App;
-}(_react.Component);
-
-exports.default = App;
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
 var _reactRouterDom = __webpack_require__(24);
 
-var _About = __webpack_require__(71);
+var _About = __webpack_require__(70);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Portfolio = __webpack_require__(72);
+var _Portfolio = __webpack_require__(71);
 
 var _Portfolio2 = _interopRequireDefault(_Portfolio);
 
@@ -24569,7 +24519,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var HomePage = function HomePage() {
   return _react2.default.createElement(
     'div',
-    null,
+    { className: 'home' },
     _react2.default.createElement(
       'div',
       { className: 'split left' },
@@ -24580,7 +24530,7 @@ var HomePage = function HomePage() {
       ),
       _react2.default.createElement(
         _reactRouterDom.Link,
-        { to: '/portfolio', className: 'button' },
+        { to: '/about', className: 'button' },
         'Read More'
       )
     ),
@@ -24593,8 +24543,8 @@ var HomePage = function HomePage() {
         'Projects'
       ),
       _react2.default.createElement(
-        'a',
-        { href: '#', className: 'button' },
+        _reactRouterDom.Link,
+        { to: '/portfolio', className: 'button' },
         'Read More'
       )
     )
@@ -24652,7 +24602,7 @@ var Home = function (_Component) {
 exports.default = Home;
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24683,7 +24633,7 @@ var About = function About() {
 exports.default = About;
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

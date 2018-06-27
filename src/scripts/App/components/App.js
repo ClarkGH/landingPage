@@ -4,16 +4,18 @@ import About from './About';
 import Portfolio from './Portfolio';
 
 const HomePage = () => {
-  return (<div>
-    <div className="split left">
-      <h1>About Clark</h1>
-      <Link to="/portfolio" className="button">Read More</Link>
+  return (
+    <div className="home">
+      <div className="split left">
+        <h1>About Clark</h1>
+        <Link to="/about" className="button">Read More</Link>
+      </div>
+      <div className="split right">
+        <h1>Projects</h1>
+        <Link to="/portfolio" className="button">Read More</Link>
+      </div>
     </div>
-    <div className="split right">
-      <h1>Projects</h1>
-      <a href="#" className="button">Read More</a>
-    </div>
-  </div>);
+  );
 }
 
 export default class Home extends Component {
