@@ -1,11 +1,27 @@
 [v-cloak] > * { display:none }
 [v-cloak]::before { content: "loading…" }
-
+body {
+  --lemon: #fff700;
+  --pale-yellow: #ffffe0;
+  --spring-green:#00ff7f;
+  --mint: #bdfcc9;
+  --pale-pink: #ffc0cb;
+  --light-salmon: #ffa07a;
+  --lavender: #b573dc;
+  --light-plum: #dda0dd;
+  --lilac: #c8a2c8;
+  --violet: #ee82ee;
+  --sky-blue: #87ceeb;
+  --robins-egg-blue: #00cccc;
+  --turquoise: #40e0D0;
+  background-color: var(--sky-blue);
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: var(--lavender);
+  background-color: var(--pale-yellow);
 }
 
 h1.heading {
